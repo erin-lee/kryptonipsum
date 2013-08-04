@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+gem "middleman", "~>3.0.14"
+gem "middleman-blog", "~> 3.1.1"
+gem "kramdown"
+gem "builder", "~> 3.0.0"
+gem "compass"
+gem "zurb-foundation"
+gem "forgery"
+gem "sitemap_generator"
+gem "tzinfo"
+gem "middleman-livereload"
+gem "middleman-gh-pages"
+gem "middleman-deploy"
+gem "middleman-smusher"
