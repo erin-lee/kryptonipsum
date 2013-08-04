@@ -1,0 +1,368 @@
+div {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; 
+}
+
+
+/* IE upgrade overlay */
+#ie-warning-overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  filter: alpha(opacity=90);
+  background-color: #f1f1f1;
+
+  #ie-warning {
+    position: relative;
+    z-index: 2001;
+    border: #000 1px solid;
+    padding: 20px; 
+    background-color: #fff;
+    color: #4f4f4f;
+    font-family: 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif;
+    list-style-type: none;
+    margin: 50px auto;
+    width: 650px;
+    height: 300px;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      list-style: none none outside;
+
+      li {
+        background: image-url("browser_warning_bg.gif") no-repeat left top;
+        float: left;
+        margin: 0 5px;
+        width: 120px;
+        height: 122px;
+        cursor: pointer;
+        
+        a {
+          display: block;
+          width: 120px;
+          height: 122px;
+          cursor: pointer;
+        }
+
+        img {
+          margin: 0 10px;
+          width: 100px;
+          height: 100px;
+        }
+
+        p {
+          font-size: 0.8em;
+          margin: 0 auto;
+          width: 120px;
+          color: #808080;
+          line-height: 17px;
+          height: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Nav bar
+.title-area {
+  a, a:visited {
+    color: $white;
+    &:hover {
+      color: $sunshine;
+    } 
+  }
+}
+.top-bar-section {
+  .right {
+    background-color: transparent;
+    .has-dropdown {
+      a {
+        height: 40px;
+        padding: 10px;
+        margin-right: 15px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+.top-bar {
+  // padding-bottom: emCalc(5px);
+  h1.logo {
+    @media #{$small} { 
+      margin-left: emCalc(33px);      
+      border: 3px solid $white;
+    }
+    display: inline;
+    font-weight: normal;
+    font-size: emCalc(20px);
+    padding: emCalc(10px) emCalc(7px) emCalc(5px);
+    margin-left: emCalc(13px);
+    margin-right: emCalc(10px);
+    a {
+      color: $white;
+      &:hover {
+        color: $sunshine;
+      }
+    }
+  }
+  li.title-area {
+    color: $white;
+    margin-top: emCalc(19px);
+    span {
+      @media #{$small} { 
+        font-size: emCalc(13px);
+        color: $white;
+      }
+      font-size: emCalc(8px);
+      color: $red;
+    }
+  }
+}
+// Footer
+
+footer {
+  background-color: $black;
+  padding: 0;
+  margin-left: none;
+  .logo {
+    font-size: emCalc(130px);
+    color: $gray2;
+  }
+  .row {
+    max-width: 100%;
+  }
+  p {
+    color: $white;
+    font-size: 80%;
+    text-align: center;
+  }
+  ul {
+    @include navigation-list;
+    display: inline-block;
+  }
+  ul li {
+    list-style: none;
+    float: left;
+    padding: 15px;
+    margin: 10px 0 0 0;
+    color: $white;
+  }
+  h3 {
+    color: $white;
+    float: center;
+    position: relative;
+    padding-left: 95px;
+    margin: 20px 10px 10px 10px;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $secondary-color;
+    } 
+  }
+  img {
+    margin: 0 10px;
+  }
+}
+
+// all the headers
+header {
+  width: 100%;
+  color: $white;
+  h2, h3, h4, h5, h6 {
+    color: $white;
+    font-weight: normal;
+  }
+  h1 {
+    color: $white;
+    margin-bottom: 0;
+    font-family: $font-alt;
+  }
+  border-bottom: 5px solid $red;
+}
+
+
+#generate {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  bottom: 0;
+ }
+
+// interns
+section.index-page-scholars {
+  div.index-page-scholars {
+    padding-bottom: emCalc(100px);
+  }
+  li {
+    // height: emCalc(200px);   
+    // overflow-y: hidden;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+
+// The Rest
+
+.index-page {
+  padding-bottom: emCalc(80px);
+  height: emCalc(550px);
+  h1.index-page-title {
+    @media #{$small} {
+      font-size: emCalc(70px);
+      line-height: emCalc(17px);
+      color: $white;
+    }
+    margin-bottom: emCalc(10px);
+    font-size: emCalc(20px);
+    font-family: $helvetica;
+    font-weight: bold;
+    span.grants-question {
+      font-family: $helvetica;
+    }
+  }
+  .button {
+    // font-family: $universebold;
+    font-size: emCalc(25px);
+    font-weight: bold;
+    padding: emCalc(8px) emCalc(14px);
+    // letter-spacing: emCalc(2px);
+  }
+  span.index-page-subtitle {
+      margin-top: emCalc(50px);
+      a {
+      color: $sunshine;
+      &:hover {
+        color: $white;
+      }
+    }
+    @media #{$small} {
+      border: 5px solid $white;
+      color: $white;
+      padding: emCalc(10px);
+      font-size: emCalc(20px);
+      a {
+        color: $white;
+        &:visited {
+          color: $white;
+        }
+        &:hover {
+          color: $melon;
+        }
+      }
+    }
+    font-size: emCalc(25px);
+    color: $sunshine;
+    border: 5px solid $sunshine;
+    padding: emCalc(10px) emCalc(20px);
+    font-weight: bold;
+  }
+  background: {
+    position: center bottom;
+    repeat: no-repeat;
+    color: $black;
+    image: url(image-path("bg_01.png"));
+    size: cover;
+  }
+}
+section.content {
+  p.subtitle {
+    padding: emCalc(15px) 0;
+    text-align: center;
+    font-size: emCalc(30px);
+    font-family: $font-alt;
+    line-height: emCalc(18px);
+  }
+  hr {
+    margin-top: 0;
+    padding: 0;
+  }
+  .button {
+    padding: emCalc(9px) emCalc(11px);
+  }
+}
+.krypton-ipsum {
+  padding-top: emCalc(20px);
+  label {
+    display: inline;
+    padding: emCalc(3px) emCalc(5px);
+    font-weight: bold;
+    color: $red;
+    font-size: emCalc(20px);
+    line-height: emCalc(25px);
+  }
+  h4 {
+    display:inline;
+    text-shadow: 2px 2px #000;
+  }
+  input[type="text"] {
+    background-color: $white;
+    height: emCalc(30px);
+    color: $red;
+    @include border-radius(5px);
+    font-weight: bold;
+    display: inline;
+  }
+}
+.krypton-ipsum-text {
+  padding-top: emCalc(20px);
+  textarea {
+    height: emCalc(200px);
+    @include border-radius(15px);
+    background: rgba(255, 255, 255, 0.2);
+    color: $white;
+    @media #{$small} {
+      padding-top: emCalc(20px);
+      height: emCalc(400px);
+      font-size: emCalc(15px);
+      line-height: 25px;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.button, button {
+  border-bottom: 4px solid darken($red, 25%);
+  padding: .7em 1.5em;
+  font-weight: bold;
+}
+
+h3.krypton-title, h4.krypton-title {
+  @include krypt-title;
+  a {
+    color: $black;
+    &:hover {
+      color: $melon;
+    }
+  }
+}
+div.krypton-title {
+  text-align: center;
+  padding-bottom: emCalc(25px);
+}
+.reveal-modal {
+  @include krypt-border;
+  text-align: center;
+  padding-bottom: emCalc(6px);
+  img {
+    height: emCalc(200px);
+    float: left;
+    padding-left: emCalc(20px);
+  }
+}
