@@ -47,7 +47,7 @@
   <ul class="title-area">
     <!-- Title Area -->
     <li class="title-area">
-      <h1 class="logo"><%= link_to 'Kr', "#" %></h1>
+      <h1 class="logo"><a href="" data-reveal-id="danceModal">Kr</a></h1>
       <span>Krypton Ipsum.</span>
     </li>
   </ul>
@@ -97,6 +97,11 @@
   <p><a href="http://kryptoncc.herokuapp.com/" target="_blank"><strong>The First Version</strong></a></p>
   <p><a href="http://kryptoncc5.herokuapp.com/" target="_blank"><strong>The Second Version</strong></a></p>
   <p><a href="http://indiethinkers.com/" target="_blank"><strong>The Alternate Version</strong></a></p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="danceModal" class="reveal-modal">
+  <h3 class="krypton-title">Grancersizing</h3>
+  <p><%= image_tag("dancing.gif") %></p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
     <!--[if lt IE 8]>
