@@ -1,261 +1,289 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 lang="en"> <![endif]-->
+<!--[if gt IE 8]> <! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif]> -->
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="" />
-    <meta name="copyright" content="" />
-    <link type="text/plain" rel="author" href="/humans.txt" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta http-equiv="cleartype" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <meta charset='utf-8'>
+    <meta content='' name='description'>
+    <meta content='' name='copyright'>
+    <link href='/humans.txt' rel='author' type='text/plain'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='True' name='HandheldFriendly'>
+    <meta content='320' name='MobileOptimized'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='on' http-equiv='cleartype'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <title>krypton ipsum</title>
-
     <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-    
-
-    
     
     <!-- IE backporting -->
     <!--[if lt IE 9]>
       <script src="javascripts/html5.js" type="text/javascript"></script>
     <![endif]-->
-
+    <!-- <![endif] -->
     
   </head>
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
-
-
-<nav class="top-bar">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="title-area">
-      <h1 class="logo"><a href="" data-reveal-id="danceModal">Kr</a></h1>
-      <span>Krypton Ipsum.</span>
-    </li>
-  </ul>
-<!--  data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them! -->
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-        <li class="navigate"><a href="" data-reveal-id="myModal" data-tooltip class="has-tip" title="Sites we created">Retired</a></li>
-      <li class="navigate">
-        <a target="_blank" data-tooltip="" title="the official blog by us" class="has-tip" href="http://kryptoncommunitycollege.wordpress.com">Blog</a>
-      </li><li class="navigate">
-        <a target="_blank" data-tooltip="" title="the parody site" class="has-tip" href="http://www.seanogodin.com">Sean O'Godin</a>
-      </li>      
-    </ul> 
-  </section>
-</nav>
+    <!--[if lt IE 7]> <p class=chromeframe>You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p> <![endif]-->
+    <nav class='top-bar'>
+      <ul class='title-area'>
+        <!-- Title Area -->
+        <li class='title-area'>
+          <h1 class='logo'>
+            <a data-reveal-id='danceModal' href=''>Kr</a>
+          </h1>
+          <span>Krypton Ipsum</span>
+        </li>
+      </ul>
+      <section class='top-bar-section'>
+        <ul class='right'>
+          <li class='navigate'>
+            <a data-reveal-id='myModal' href='' title='Sites we created'>Retired</a>
+          </li>
+          <li class='navigate'>
+            <a target="_blank" href="http://kryptoncommunitycollege.wordpress.com">Blog</a>
+          </li>
+          <li class='navigate'>
+            <a target="_blank" href="http://www.seanogodin.com">Sean O'Godin</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
     <!-- End Header and Nav -->
-
     <!-- Main page container -->
-        <header class="index-page">
-  <div class="row">
-    <div class="large-12 large-centered columns">
-      <div class="row">
-        <div class="large-5 columns">
-          <div class="krypton-ipsum">
-            <form id="ipsum-form" action="#" method="post" class="custom">
-            <input type="submit" id="submit generate" class="button medium" value="Talk Krypton Ipsum" /><br>
-            
-          <h4>Paragraphs:</h4> <input id="paragraph_count" style="width: 25px;" type="text" maxlength="2" value="1"/><br>
-          <h4>Flavors:</h4><br>
-            <input id="full-krypton" type="radio" name="choice" value="full-krypton" checked />
-              <label for="full-krypton">Full Krypton</label> <br>
-            <input id="only-seth" type="radio" name="choice" value="only-seth" />
-              <label for="only-seth">Only Seth</label> <br>
-            <input id="sans-seth" type="radio" name="choice" value="sans-seth" />
-              <label for="sans-seth">Sans Seth</label><br>
-            
-          </form>
+    <header class='index-page'>
+      <div class='row'>
+        <div class='large-12 large-centered columns'>
+          <div class='row'>
+            <div class='large-5 columns'>
+              <div class='krypton-ipsum'>
+                <form action='#' class='custom' id='ipsum-form' method='post'>
+                  <input class='button medium' id='submit generate' type='submit' value='Talk Krypton Ipsum'>
+                  <br>
+                  <h4>Paragraphs:</h4>
+                  <input id='paragraph_count' maxlength='2' style='width: 25px;' type='text' value='1'>
+                  <br>
+                  <h4>Flavors :</h4>
+                  <br>
+                  <input checked='' id='full-krypton' name='choice' type='radio' value='full-krypton'>
+                  <label for='full-krypton'>Full Krypton</label>
+                  <br>
+                  <input id='only-seth' name='choice' type='radio' value='only-seth'>
+                  <label for='only-seth'>Only Seth</label>
+                  <br>
+                  <input id='sans-seth' name='choice' type='radio' value='sans-seth'>
+                  <label for='sans-seth'>Sans Seth</label>
+                  <br>
+                </form>
+              </div>
             </div>
+            <div class='large-7 columns'>
+              <div class='krypton-ipsum-text'>
+                <textarea id='box-content'></textarea>
+                <p>Just select all + copy</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="large-7 columns">
-          <div class="krypton-ipsum-text"><textarea id="box-content"></textarea>
-          <p>Just select all + copy</p>
-
-          </div>
-          </div>
       </div>
-    </div>
-  </div>
-</header>
-
-<section class="content">
-  <div class="row">
-      <div class="large-12 large-centered columns">
-          <p class="subtitle">
-            Two weeks.<br>Seventeen Individuals.<br> One Seth Godin.<br>
-            165 words.
-          </p>
-      </div>
-  </div>
-</section>
-
-<section class="index-page-scholars">
-  <div class="row">
-    <div class="large-4 large-centered columns krypton-title">
-        <h3 class="krypton-title"><a href="#">Interns</a></h3>
-    </div>
-  </div>
-  <div class="row index-page-scholars">
-    <div class="large-12">
-      <ul class="small-block-grid-2 large-block-grid-3">
-        
-        
-        <li><a class="group" href="images/intern-1.jpg"><img src="images/intern-1.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-2.jpg"><img src="images/intern-2.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-3.jpg"><img src="images/intern-3.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-4.jpg"><img src="images/intern-4.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-5.jpg"><img src="images/intern-5.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-6.jpg"><img src="images/intern-6.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-7.jpg"><img src="images/intern-7.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-8.jpg"><img src="images/intern-8.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-9.jpg"><img src="images/intern-9.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-10.jpg"><img src="images/intern-10.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-11.jpg"><img src="images/intern-11.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-12.jpg"><img src="images/intern-12.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-13.jpg"><img src="images/intern-13.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-14.jpg"><img src="images/intern-14.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-15.jpg"><img src="images/intern-15.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-16.jpg"><img src="images/intern-16.jpg" /></a> </li>
-        
-        <li><a class="group" href="images/intern-17.jpg"><img src="images/intern-17.jpg" /></a> </li>
-        
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Footer -->
-<footer class="full-width">
-  <div class="row">   
-    <div class="large-3 columns">
-        <h3><span data-tooltip class="has-tip" title="Krypton CC">Krypton</span></h3>
-    </div>
-    <div class="large-9 columns">
-      <ul>
-        <li>Photos: <a href="http://getlifeboat.com" target="_blank">Tim</a> (mostly)</li>
-        <li>Original Designs: <a href="http://grantdoeswork.com/" target="_blank">Grant</a>, <a href="http://rachelilansimpson.com" target="_blank">Rachel</a>, & <a href="http://www.carlosxcl.com" target="_blank">Carlos</a></li>
-        <li>Code: <a href="http://www.erinandcode.com" target="_blank">Erin</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns large-centered">
-      <p>Inspired by the work of my Flatiron Friends: <a target="_blank" href="http://www.twitter.com/ana_becker">@ana_becker</a> and <a target="_blank" href="http://www.twitter.com/jkestler">@jkestler</a></p>
-    </div>
-  </div>
-</footer>
-<div id="myModal" class="reveal-modal">
-  <h3 class="krypton-title">Retired</h3>
-  <h4>These are the sites we built:</h4>
-  <img src="images/narwhals-krypton.gif" />
-  <p><a href="http://kryptoncc.herokuapp.com/" target="_blank"><strong>The First Version</strong></a></p>
-  <p><a href="http://kryptoncc5.herokuapp.com/" target="_blank"><strong>The Second Version</strong></a></p>
-  <p><a href="http://indiethinkers.com/" target="_blank"><strong>The Alternate Version</strong></a></p>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
-<div id="danceModal" class="reveal-modal">
-  <h3 class="krypton-title">Grancersizing</h3>
-  <p><img src="images/dancing.gif" /></p>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
-    <!--[if lt IE 8]>
-    <div id="ie-warning-overlay">
-      <div id="ie-warning">
-        <h1>Did you know that your copy of Internet Explorer is out of date?</h1>
-        <p>
-          To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser. 
-          Any of the following will provide a superior experience, not only on this site, but across the web.
+    </header>
+    <section class='content row'>
+      <div class='large-12 large-centered columns'>
+        <p class='subtitle'>
+          Two weeks.
+          <br>
+          Seventeen Individuals.
+          <br>
+          One Seth Godin.
+          <br>
+          165 words.
         </p>
+      </div>
+    </section>
+    <section class='index-page-scholars'>
+      <div class='row'>
+        <div class='large-4 large-centered columns krypton-title'>
+          <h3 class='krypton-title'><a href="#">Interns</a></h3>
+        </div>
+      </div>
+      <div class='row index-page-scholars'>
+        <div class='large-12'>
+          <ul class='small-block-grid-2 large-block-grid-3'>
+            <li>
+              <a class="group" href="images/intern-1.jpg"><img src="images/intern-1.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-2.jpg"><img src="images/intern-2.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-3.jpg"><img src="images/intern-3.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-4.jpg"><img src="images/intern-4.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-5.jpg"><img src="images/intern-5.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-6.jpg"><img src="images/intern-6.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-7.jpg"><img src="images/intern-7.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-8.jpg"><img src="images/intern-8.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-9.jpg"><img src="images/intern-9.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-10.jpg"><img src="images/intern-10.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-11.jpg"><img src="images/intern-11.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-12.jpg"><img src="images/intern-12.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-13.jpg"><img src="images/intern-13.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-14.jpg"><img src="images/intern-14.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-15.jpg"><img src="images/intern-15.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-16.jpg"><img src="images/intern-16.jpg" /></a>
+            </li>
+            <li>
+              <a class="group" href="images/intern-17.jpg"><img src="images/intern-17.jpg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class='full-width'>
+      <div class='row'>
+        <div class='large-3 columns'>
+          <h3><span title='Krypton CC'></span></h3>
+        </div>
+        <div class='large-9 columns'>
+          <ul>
+            <li>
+              Photos:
+              <a href='http://getlifeboat.com' target='_blank'>Tim</a>
+              (mostly)
+            </li>
+            <li>
+              Original Designs:
+              <a href='http://grantdoeswork.com/' target='_blank'>Grant</a>,
+              <a href='http://rachelilansimpson.com' target='_blank'>Rachel</a>,
+              &
+              <a href='http://www.carlosxcl.com' target='_blank'>Carlos</a>
+            </li>
+            <li>
+              Code:
+              <a href='http://www.erinandcode.com' target='_blank'>Erin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='large-12 columns large-centered'>
+          <p>
+            Inspired by the work of my Flatiron Friends:
+            <a href='http://www.twitter.com/ana_becker' target='_blank'>@ana_becker and</a>
+            <a href='http://www.twitter.com/jkestler' target='_blank'>@jkestler</a>
+          </p>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='large-12 columns large-centered'>
+          <p>
+            Crafted with:
+            <a href='http://foundation.zurb.com/' target='_blank'>Foundation 4</a>
+            ,
+            <a href='http://middlemanapp.com/' target='_blank'>Middleman</a>
+            ,
+            <a href='http://sass-lang.com/' target='_blank'>Sass</a>
+            , and
+            <a href='http://http://haml.info/' target='_blank'>Haml</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <div class='reveal-modal' id='myModal'>
+    <hgroup>
+      <h3 class='krypton-title'>Retired</h3>
+      <h4>These are the sites we built:</h4>
+      <img src="images/narwhals-krypton.gif" />
+      <p>
+        <a href='http://kryptoncc.herokuapp.com/' target='_blank'>
+          <strong>The First Version</strong>
+        </a>
+      </p>
+      <p>
+        <a href='http://kryptoncc5.herokuapp.com/' target='_blank'>
+          <strong>The Second Version</strong>
+        </a>
+      </p>
+      <p>
+        <a href='http://indiethinkers.com' target='_blank'>
+          <strong>The Alternate Version</strong>
+        </a>
+      </p>
+      <a class='close-reveal-modal'>&#215;</a>
+    </hgroup>
+  </div>
+  <div class='reveal-modal' id='danceModal'>
+    <h3 class='krypton-title'>Grancersizing</h3>
+    <p>
+      <img src="images/dancing.gif" />
+      <a class='close-reveal-modal'>&#215;</a>
+    </p>
+  </div>
+  <!--[if lt IE 8]>
+    <div id='ie-warning-overlay'>
+      <div id='ie-warning'>
+        <h1>Did you know that your copy of Internet Explorer is out of date?</h1>
+        <p>To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser. Any of the following will provide a superior experience, not only on this site, but across the web.</p>
         <p>Just click one of the icons below to get to the download page.</p>
         <ul>
           <li>
-            <a href="http://microsoft.com/ie">
-              <img alt="Download Internet Explorer" src="images/browser_ie.gif" />
-              <p>Internet Explorer 8+</p>
-            </a>
-          </li>
-          <li>
-            <a href="http://mozilla.org/firefox">
-              <img alt="Download Firefox" src="images/browser_firefox.gif" />
-              <p>Firefox</p>
-            </a>
-          </li>
-          <li>
-            <a href="http://google.com/chrome">
-              <img alt="Download Chrome" src="images/browser_chrome.gif" />
-              <p>Google Chrome</p>
-            </a>
-          </li>
-          <li>
-            <a href="http://apple.com/safari">
-              <img alt="Download Safari" src="images/browser_safari.gif" />
-              <p>Safari</p>
-            </a>
-          </li>
-          <li>
-            <a href="http://opera.com">
-              <img alt="Download Opera" src="images/browser_opera.gif" />
-              <p>Opera</p>
+            <a href='http://microsoft.com/ie'>
+              <img src="images/browser_ie.gif" />
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <![endif]-->
-
-    <!-- jQuery -->           
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/jquery.js"><\/script>');</script>
-
+    <!-- jQuery -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="/jquery.js"><\/script>');
+    </script>
     <!-- Javascript -->
     <script src="javascripts/application.js" type="text/javascript"></script>
     
-
-    <script type="text/javascript">
-      $(document).ready(function () {
+    <script>
+      $(document).ready(function (){
         imgSizer.collate();
         
       });
-
+      
       var _gaq=[['_setAccount','UA-'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-
+      
       $(document).ready(function() {
-  /* Apply fancybox to multiple items */
+      /* Apply fancybox to multiple items */
           $("a.group").attr('rel', 'gallery').fancybox({
           'speedIn'   : 1000, 
           'speedOut'    : 1200, 
@@ -263,7 +291,5 @@
         });
       });
     </script>
-
-  </body>
+  <![endif]-->
 </html>
-
