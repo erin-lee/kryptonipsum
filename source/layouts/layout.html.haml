@@ -1,0 +1,169 @@
+!!! 5
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7 lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9 lang="en">
+/ [if gt IE 8]<!
+%html.no-js{:lang => "en"}
+  / <![endif]>
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "copyright", :content => ""}
+    %link{:type => "text/plain", :rel => "author", :href => "/humans.txt"}
+
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:name => "HandheldFriendly", :content => "True"}
+    %meta{:name => "MobileOptimized", :content => "320"}
+    %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
+    %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black-translucent"}
+
+    %meta{"http-equiv" => "cleartype", :content => "on"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %title= data.page.title || "Krypton Ipsum"
+
+    = stylesheet_link_tag "application"
+    = yield_content :stylesheets
+
+    - if content_for? :styles
+      :css
+        #{yield_content :styles}
+
+    / IE backporting
+    /[if lt IE 9]
+      = javascript_include_tag "html5"
+    / <![endif]    
+
+    = yield_content :head
+
+  %body
+    /[if lt IE 7] <p class=chromeframe>You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+
+    %nav.top-bar
+      %ul.title-area
+        / Title Area
+        %li.title-area
+          %h1.logo
+            %a{"data-reveal-id" => "danceModal", :href => ""} Kr
+          %span Krypton Ipsum
+
+      %section.top-bar-section
+        %ul.right
+          %li.navigate
+            %a{"data-reveal-id" => "myModal", :title => "Sites we created", :href => ""} Retired
+          %li.navigate
+            = link_to "Blog", "http://kryptoncommunitycollege.wordpress.com", :target => "_blank"
+          %li.navigate
+            = link_to "Sean O'Godin", "http://www.seanogodin.com", :target => "_blank"
+
+    / End Header and Nav
+
+    / Main page container
+
+    = yield
+
+    / Footer
+
+    %footer.full-width
+      .row
+        .large-3.columns
+          %h3<
+            %span{:title => "Krypton CC"}
+
+        .large-9.columns
+          %ul
+            %li 
+              Photos:
+              %a{:href => "http://getlifeboat.com", :target => "_blank"} Tim 
+              (mostly)
+            %li
+              Original Designs:
+              = succeed "," do
+                %a{:href => "http://grantdoeswork.com/", :target => "_blank"} Grant
+              = succeed "," do
+                %a{:href => "http://rachelilansimpson.com", :target => "_blank"} Rachel
+              \&
+              %a{:href => "http://www.carlosxcl.com", :target => "_blank"} Carlos
+            %li
+              Code:
+              %a{:href => "http://www.erinandcode.com", :target => "_blank"} Erin
+      .row
+        .large-12.columns.large-centered
+          %p 
+            Inspired by the work of my Flatiron Friends:
+            %a{:href => "http://www.twitter.com/ana_becker", :target => "_blank"} @ana_becker and
+            %a{:href => "http://www.twitter.com/jkestler", :target => "_blank"} @jkestler
+      .row
+        .large-12.columns.large-centered
+          %p 
+            Crafted with:
+            %a{:href => "http://foundation.zurb.com/", :target => "_blank"} Foundation 4
+            ,
+            %a{:href => "http://middlemanapp.com/", :target => "_blank"} Middleman
+            ,
+            %a{:href => "http://sass-lang.com/", :target => "_blank"} Sass
+            , and
+            %a{:href => "http://http://haml.info/", :target => "_blank"} Haml
+
+
+  #myModal.reveal-modal
+    %hgroup
+      %h3.krypton-title Retired
+      %h4 These are the sites we built:
+      = image_tag("narwhals-krypton.gif")
+      %p
+        %a{:href => "http://kryptoncc.herokuapp.com/", :target => "_blank"}
+          %strong The First Version
+      %p
+        %a{:href => "http://kryptoncc5.herokuapp.com/", :target => "_blank"}
+          %strong The Second Version
+      %p
+        %a{:href => "http://indiethinkers.com", :target => "_blank"}
+          %strong The Alternate Version
+      %a.close-reveal-modal &#215;
+
+  #danceModal.reveal-modal
+    %h3.krypton-title Grancersizing
+    %p
+      = image_tag("dancing.gif")
+      %a.close-reveal-modal &#215;
+
+
+  /[if lt IE 8]
+    #ie-warning-overlay
+      #ie-warning
+        %h1 Did you know that your copy of Internet Explorer is out of date?
+        %p To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser. Any of the following will provide a superior experience, not only on this site, but across the web.
+        %p Just click one of the icons below to get to the download page.
+        %ul
+          %li
+            %a{:href => "http://microsoft.com/ie"}
+              = image_tag('browser_ie.gif')
+
+    / jQuery         
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="/jquery.js"><\/script>');
+
+    / Javascript
+    = javascript_include_tag "application"
+    = yield_content :javascripts
+
+    :javascript
+      $(document).ready(function (){
+        imgSizer.collate();
+        #{yield_content :onready}
+      });
+
+      var _gaq=[['_setAccount','UA-'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+
+      $(document).ready(function() {
+      /* Apply fancybox to multiple items */
+          $("a.group").attr('rel', 'gallery').fancybox({
+          'speedIn'   : 1000, 
+          'speedOut'    : 1200, 
+          'overlayShow' : false
+        });
+      });
+
+
